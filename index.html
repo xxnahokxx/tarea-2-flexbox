@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout example · Bootstrap v5.1</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg">
+</head>
+<body>
+    <main class="container">
+        <div class="textGroup">
+            <img class="d-block mx-auto mb-4 img" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="">
+            <div class="containerParagraph">
+                <h2 class="tittle">Checkout form</h2>
+                <p class="paragraph">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            </div>
+        </div>
+
+        <div class="mainContainer flex">        
+            <!--carrito de compra-->
+            <div class="cart">
+                <div class="cartHeader flex">
+                    <h4 class="SubtittleCart">
+                        <span class="subtittleCart">Your cart</span>
+                    </h4>
+                    <span class="imgCart">
+                        3
+                    </span>
+                </div>
+                <ul class="list flex">
+                    <li class="buys flex">
+                        <div class="buysItem">
+                            <h6 class="buysTitle">Product name</h6>
+                            <small class="small">Brief description</small>
+                        </div>
+                        <span class="cost">
+                            $12
+                        </span>
+                    </li>
+
+                    <li class="buys flex">
+                        <div class="buysItem">
+                            <h6 class="buysTitle">Second product</h6>
+                            <small class="small">Brief description</small>
+                        </div>
+                        <span class="cost">
+                            $8
+                        </span>
+                    </li>
+
+                    <li class="buys flex">
+                        <div class="buysItem">
+                            <h6 class="buysTitle">Third item</h6>
+                            <small class="small">Brief description</small>
+                        </div>
+                        <span class="cost">
+                            $5
+                        </span>
+                    </li>
+
+                    <li class="buys flex promo">
+                        <div class="buysItem">
+                            <h6 class="buysTitle promo">Promo code</h6>
+                            <small class="small promo">EXAMPLECODE</small>
+                        </div>
+                        <span class="cost promo">
+                            -$5
+                        </span>
+                    </li>
+
+                    <li class="buys flex">
+                        <div class="buysItem">
+                            <h6 class="buysTitle">Total (USD)</h6>
+                        </div>
+                        <span class="cost total">
+                            $20
+                        </span>
+                    </li>
+                </ul>
+                <div class="code">
+                    <form action="" class="flex form-code">
+                        <input type="text" class="text text-code" placeholder="Promo code">
+                        <button class="button button-text grey">Redeem</button>
+                    </form>
+                </div>
+            </div>
+            <!--contenedor del formulario principal-->
+            <div class="container-form flex">
+                <form action="">
+                    <div class="info">
+                        <h4 class="form-title">Billing address</h4>
+                    </div>
+                    <div class="info flex">
+                        <div class="nameLeft">
+                            <label class="label-form" for="Firstname">First name</label>
+                            <input type="text" class="text" id="Firstname" required>
+                        </div>
+                        <div class="nameRight">
+                            <label class="label-form" for="Lastname">Last name</label>
+                            <input type="text" class="text" id="Lastname">
+                        </div>
+                    </div>
+
+                    <div class="info mt">
+                        <label class="label-form" for="Username">Username</label>
+                        <div class="Username">
+                            <span class="usrname">@</span>
+                            <input type="text" class="text" id="Username" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <label class="label-form" for="email">Email</label>
+                        <span class="opacity">(Optional)</span>
+                        <input type="text"class="text" id="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="info">
+                        <label class="label-form" for="address">Address</label>
+                        <input type="text"class="text" id="address" placeholder="1234 Main St">
+                    </div>
+
+                    <div class="info">
+                        <label class="label-form" for="address2">Address 2</label>
+                        <span class="opacity">(Optional)</span>
+                        <input type="text"class="text" id="address2" placeholder="1234 Main St">
+                    </div>
+                    <div class="info no-wrap">
+                        <div class="country pr">
+                            <label class="label-form" for="country">Country</label>
+                            <select name="" id="country">
+                                <option value="">Choose</option>
+                                <option value="">United States</option>
+                            </select>
+                        </div>
+
+                        <div class="state pl pr">
+                            <label class="label-form" for="state">State</label>
+                            <select name="" id="state">
+                                <option value="">Choose</option>
+                                <option value="">Cakifornia</option>
+                            </select>
+                        </div>
+
+                        <div class="zip pl">
+                            <label class="label-form" for="zip">Zip</label>
+                            <input type="text" id="zip" class="text">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <hr class="section">
+                    </div>
+
+                    <div class="info margin-0">
+                        <input type="checkbox" class="check" id="check1">
+                        <label class="label-form" for="check1">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="info margin-0">
+                        <input type="checkbox" class="check" id="check2">
+                        <label class="label-form" for="check2">Save this information for next time</label>
+                    </div>
+
+                    <div class="info">
+                        <hr class="section">
+                    </div>
+
+                    <div class="info margin-0">
+                        <h4 class="form-title">Payment</h4>
+                        <input type="radio" class="option" id="option1" name="page">
+                        <label class="label-form" for="option1">Credit card</label>
+                    </div>
+                    <div class="info margin-0">
+                        <input type="radio" class="option" id="option2" name="page">
+                        <label class="label-form" for="option2">Debit card</label>
+                    </div>
+                    <div class="info margin-0">
+                        <input type="radio" class="option" id="option3" name="page">
+                        <label class="label-form" for="option3">PayPal</label>
+                    </div>
+
+                    <div class="flex">
+                        <div class="info-payment pr">
+                            <label class="label-form" for="">Name on card</label>
+                            <input type="text" class="text">
+                            <small class="small">Full name as displayed on card</small>
+                        </div>
+                        <div class="info-payment pl">
+                            <label class="label-form" for="">Credit card number</label>
+                            <input type="text" class="text">
+                        </div>
+                        <div class="info-payment size-sm pr">
+                            <label class="label-form" for="">Expiration</label>
+                            <input type="text" class="text">
+                        </div>
+                        <div class="info-payment size-sm pl">
+                            <label class="label-form" for="">CVV</label>
+                            <input type="text" class="text">
+                        </div>
+                        <div class="info margin-0">
+                            <hr class="section">
+                        </div>
+
+                        <div class="info margin-0">
+                            <button class="button blue">Continue to checkout</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex container">
+            <p class="paragraph-footer">© 2017–2021 Company Name</p>
+            <ul class="list-footer flex">
+                <li class="item-footer"><a href="#">Privacy</a></li>
+                <li class="item-footer"><a href="#">Terms</a></li>
+                <li class="item-footer"><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
