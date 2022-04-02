@@ -61,7 +61,7 @@
                         </span>
                     </li>
 
-                    <li class="buys flex promo">
+                    <li  class="buys flex promo">
                         <div class="buysItem">
                             <h6 class="buys-title promo">Promo code</h6>
                             <small class="small promo">EXAMPLECODE</small>
@@ -113,8 +113,7 @@
                     </div>
 
                     <div class="info">
-                        <label class="label-form" for="email">Email</label>
-                        <span class="opacity">(Optional)</span>
+                        <label class="label-form" for="email">Email <span class="opacity">(Optional)</span></label>
                         <input type="text"class="text" id="email" placeholder="you@example.com">
                     </div>
 
@@ -124,9 +123,9 @@
                     </div>
 
                     <div class="info">
-                        <label class="label-form" for="address2">Address 2</label>
-                        <span class="opacity">(Optional)</span>
-                        <input type="text"class="text" id="address2" placeholder="1234 Main St">
+                        <label class="label-form" for="address2">Address 2 <span class="opacity">(Optional)</span></label>
+                        
+                        <input type="text"class="text" id="address2" placeholder="Apartment or suite">
                     </div>
                     <div class="info no-wrap">
                         <div class="country pr">
@@ -141,7 +140,7 @@
                             <label class="label-form" for="state">State</label>
                             <select name="" id="state">
                                 <option value="">Choose</option>
-                                <option value="">Cakifornia</option>
+                                <option value="">California</option>
                             </select>
                         </div>
 
@@ -155,14 +154,15 @@
                         <hr class="section">
                     </div>
 
-                    <div class="info margin-0">
-                        <input type="checkbox" class="check" id="check1">
-                        <label class="label-form" for="check1">Shipping address is the same as my billing address</label>
-                    </div>
-                    <div class="info margin-0">
-                        <input type="checkbox" class="check" id="check2">
-                        <label class="label-form" for="check2">Save this information for next time</label>
-                    </div>
+                    <label class="check">Shipping address is the same as my billing address
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="check">Save this information for next time
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
 
                     <div class="info">
                         <hr class="section">
@@ -170,17 +170,22 @@
 
                     <div class="info margin-0">
                         <h4 class="form-title">Payment</h4>
-                        <input type="radio" class="option" id="option1" name="page">
-                        <label class="label-form" for="option1">Credit card</label>
                     </div>
-                    <div class="info margin-0">
-                        <input type="radio" class="option" id="option2" name="page">
-                        <label class="label-form" for="option2">Debit card</label>
-                    </div>
-                    <div class="info margin-0">
-                        <input type="radio" class="option" id="option3" name="page">
-                        <label class="label-form" for="option3">PayPal</label>
-                    </div>
+
+                    <label class="check">Credit card
+                        <input type="radio" name="page" checked="checked">
+                        <span class="checkmark2"></span>
+                    </label>
+
+                    <label class="check">Debit card
+                        <input type="radio" name="page" checked="checked">
+                        <span class="checkmark2"></span>
+                    </label>
+
+                    <label class="check">Paypal
+                        <input type="radio" name="page" checked="checked">
+                        <span class="checkmark2"></span>
+                    </label>
 
                     <div class="flex">
                         <div class="info-payment pr">
